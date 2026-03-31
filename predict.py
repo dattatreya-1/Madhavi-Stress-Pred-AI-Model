@@ -11,7 +11,7 @@ def predict_stress(input_data):
     stress_prob = probs[1]
 
     # 🔥 Adjust threshold
-    if stress_prob > 0.65:
+    if stress_prob > 0.90:
         return "UNDER STRESS", stress_prob
     else:
         return "NO STRESS", probs[0]
